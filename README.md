@@ -10,7 +10,7 @@ The repository documents the message preprocessing, conversation-thread construc
 
 No patient-level electronic health record (EHR), patient-portal message, provider, encounter, or derived analytic data are included. These data cannot be shared publicly because of patient privacy protections and institutional data-governance requirements.
 
-The code can be inspected without the data. Reproducing the numerical results requires authorized access to source extracts with the expected schemas described in [data/README.md](data/README.md). Do not commit source data, derived row-level data, notebook outputs, or generated results to this repository.
+The code can be inspected without the data. Reproducing the numerical results authorized access to the underlying institutional data using the schemas described in [data/README.md](data/README.md). Do not commit source data, derived row-level data, notebook outputs, or generated results to this repository.
 
 ## Repository contents
 
