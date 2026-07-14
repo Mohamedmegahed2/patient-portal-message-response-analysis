@@ -1,0 +1,17 @@
+# Core analysis environment reported in the manuscript
+numpy==1.24.4
+pandas==2.2.3
+statsmodels==0.14.5
+
+# Statistical, plotting, and file-format dependencies
+scipy==1.13.1
+matplotlib==3.9.2
+pyarrow==20.0.0
+openpyxl==3.1.5
+patsy==1.0.1
+stargazer==0.0.7
+
+# Notebook runtime
+ipython==9.15.0
+ipykernel==7.3.0
+jupyterlab==4.5.6

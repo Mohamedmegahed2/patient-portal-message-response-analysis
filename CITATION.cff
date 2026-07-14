@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the associated manuscript and this software release."
+title: "Analysis code for Patient Responsiveness to Health Care Worker Messages in a Patient Portal"
+type: software
+authors:
+  - family-names: Megahed
+    given-names: Mohamed
+  - family-names: Lee
+    given-names: Natalie S.
+  - family-names: Craig
+    given-names: Nathan
+  - family-names: Chandrasekaran
+    given-names: Aravind
+version: 1.0.0
+date-released: 2026-07-14
+license: MIT
+keywords:
+  - patient portals
+  - secure messaging
+  - electronic health records
+  - patient engagement
+  - health care workers
