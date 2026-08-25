@@ -2,7 +2,7 @@
 
 This repository contains the analytic code supporting the manuscript:
 
-> Patient Responsiveness to Health Care Worker Messages in a Patient Portal: Retrospective Observational Study
+> Assessing Patient-Directed Message Volume and Patient Responsiveness in Patient Portal Communication: A Retrospective Observational Study
 
 The repository documents the message preprocessing, conversation-thread construction, encounter and covariate construction, exposure definitions, regression specifications, sensitivity analyses, and figure-generation workflow used for the revised manuscript.
 
