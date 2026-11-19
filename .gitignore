@@ -216,3 +216,64 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Study data and generated artifacts
+# Restricted and derived data
+*.parquet
+*.feather
+*.arrow
+*.csv
+*.tsv
+*.txt
+!requirements.txt
+*.xlsx
+*.xls
+*.docx
+*.zip
+*.7z
+*.dta
+*.sas7bdat
+*.db
+*.sqlite
+data/*
+!data/README.md
+
+# Generated analyses and figures
+outputs/
+runs/
+figures/
+tables/
+*.png
+*.svg
+*.pdf
+*.html
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+config.local.*
+*.pem
+*.key
+
+# Python and Jupyter
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.jupyter/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+*.pkl
+*.pickle
+*.rds
+*.sav
+*.npy
+*.npz
