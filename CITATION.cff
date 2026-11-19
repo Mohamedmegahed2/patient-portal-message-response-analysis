@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this code, please cite the associated manuscript and this software release."
+message: "If you use this code, please cite the software using the metadata below."
 title: "Analysis code for Assessing Patient-Directed Message Volume and Patient Responsiveness in Patient Portal Communication: A Retrospective Observational Study"
 type: software
 authors:
@@ -11,9 +11,8 @@ authors:
     given-names: Nathan
   - family-names: Chandrasekaran
     given-names: Aravind
-version: 1.0.0
-date-released: 2026-07-14
 license: MIT
+repository-code: "https://github.com/Mohamedmegahed2/patient-portal-message-response-analysis"
 keywords:
   - patient portals
   - secure messaging
