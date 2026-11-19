@@ -12,7 +12,7 @@ The default layout beneath `JMIR_RESTRICTED_DATA_DIR` is documented in `data/REA
 - Patient demographic and birth-year extracts.
 - Problem-list history and the Charlson ICD-10 lookup table.
 
-These files may contain protected health information or operational identifiers and must not be placed in the public repository.
+Access to the source data files listed above requires institutional authorization. This repository provides the analysis code and documentation.
 
 ## Key identifiers and timestamps
 
@@ -73,6 +73,7 @@ For each exposure period (`30d` and `90d`), notebook 05 creates raw rolling coun
 
 | File | Unit |
 |---|---|
+| `provider_master_clean.parquet` | One row per mapped provider user ID. |
 | `messages_without_threads.parquet` | One row per cleaned message before thread assignment. |
 | `messages_with_threads.parquet` | One row per cleaned message with thread assignments. |
 | `encounters_unified_clean.parquet` | One row per harmonized encounter. |
@@ -80,3 +81,12 @@ For each exposure period (`30d` and `90d`), notebook 05 creates raw rolling coun
 | `message_demographics_clean.parquet` | One row per message with age-at-message variables. |
 | `message_level_charlson_cci.parquet` | One row per message with message-time CCI variables. |
 | `analysis_df_all_exposures_with_encounter_covariates.parquet` | One row per HCW-initiated analytic thread. |
+
+
+## Additional analysis fields
+
+Additional analyses reuse messages_with_threads.parquet, provider_master_clean.parquet, encounters_unified_clean.parquet, and analysis_df_all_exposures_with_encounter_covariates.parquet.
+
+Link the initiating message via `thread_first_message_id` and `MESSAGE_ID`. `MESG_TYPE` is the recorded EHR message type. `SENDER_CATEGORY` supplies the structured role for Table S9 and the role exclusion analysis. `Sender_all` is used to classify senders as physician/APP or Other HCW. “User Message” is a broad EHR category.
+
+The canonical handoff includes count/log(1+count) exposures at 7/14/30/90 days with matching prior patient-initiated histories, plus 7/30-day encounters. Reply timestamps and 7/14/30-day flags support time summaries.
